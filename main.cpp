@@ -1,16 +1,16 @@
 #include <iostream>
 #include <string>
+#include<stdio.h>
 
 using namespace std;
 
 
 void menu(){
-    no *lista;
     int op = -1;
     int info = 0;
     while(op != 0){
       system("clear");
-      cout << "--- CADASTRO ---" << endl;
+      cout << "--- Maquina de Turing---" << endl;
       cout << "0 - Sair" << endl;
 
       cin >> op;
