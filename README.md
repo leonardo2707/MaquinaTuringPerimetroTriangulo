@@ -1,4 +1,4 @@
-# MaquinaTuringPerimetroTriangulo
+# Maquina de Turing que calcula o Perimetro do Triangulo
 Uma maquina de turing que calcula o perimetro de um Triangulo
 
 
