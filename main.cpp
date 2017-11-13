@@ -1,6 +1,7 @@
+#include "funcoes.cpp"
 #include <iostream>
 #include <string>
-#include<stdio.h>
+#include <stdio.h>
 
 using namespace std;
 
@@ -9,11 +10,13 @@ void menu(){
     int op = -1;
     int info = 0;
     while(op != 0){
-      system("clear");
+      
+      teste();
       cout << "--- Maquina de Turing---" << endl;
       cout << "0 - Sair" << endl;
 
       cin >> op;
+
       
     }
 }

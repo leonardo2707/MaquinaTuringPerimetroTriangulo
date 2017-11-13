@@ -15,4 +15,10 @@ Calcular o perímetro de um triângulo é muito fácil! Basta somar a medida do 
 
 Para compilar e necessário possuir o compilador g++, e só precisa executar o seguinte comando na pasta do projeto:
 
-	g++ main.cpp -o maquina
+	$g++ main.cpp -o maquina
+
+# Como Executar
+
+Se voce compilou como o exemplo acima ´e s´o executar o arquivo 'maquina' gerado
+
+	$./maquina
