@@ -19,6 +19,6 @@ Para compilar e necessário possuir o compilador g++, e só precisa executar o s
 
 # Como Executar
 
-Se voce compilou como o exemplo acima ´e s´o executar o arquivo 'maquina' gerado
+Se voce compilou como o exemplo acima é só executar o arquivo 'maquina' gerado
 
 	$./maquina
