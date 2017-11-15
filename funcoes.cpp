@@ -1,6 +1,7 @@
 #include "tabela_acoes.cpp"
 #include <iostream>
 #include <string.h>
+#include <ctype.h>
 
 using namespace std;
 
@@ -9,8 +10,11 @@ using namespace std;
 
 void verFitaPosicao(string fita, int posicao);
 void verFita(string fita);
+string caixaAlta(string fita);
 
-void trabalharMaquina(string fita)
+
+//função que vai executar a maquina de turing com a tabela de ação 1
+void trabalharMaquina01(string fita)
 {
 	fita = fita + "___";
 	int estadoAtual = 0;
@@ -50,11 +54,13 @@ void trabalharMaquina(string fita)
 	cout << endl << "Maquina parada" << endl;
 	cout << "A fita foi finalizada desta maneira:" << endl << endl;
 	verFita(fita);
-	cout << endl << "Voltando ao menu" << endl << endl;
+	cout << endl << "Voltando ao menu da fita" << endl << endl;
 
 }
 
 
+
+//mostrar a fita e em que posição o sistema se encontra
 void verFitaPosicao(string fita, int posicao)
 {
 	for(int i = 0; i < fita.size(); i++)
@@ -72,6 +78,8 @@ void verFitaPosicao(string fita, int posicao)
 	cout <<  endl << endl;
 }
 
+
+//mostrar a fita
 void verFita(string fita)
 {
 	for(int i = 0; i < fita.size(); i++)
@@ -79,6 +87,17 @@ void verFita(string fita)
 			cout << "[" << fita[i] << "] ";
 	}
 	cout <<  endl << endl;
+}
+
+//transforma a fita em letras maiuscula
+string caixaAlta(string fita)
+{
+	for(int i = 0; i < fita.size(); i++)
+	{
+		fita[i] = toupper(fita[i]);
+	}
+
+	return fita;
 }
 
 

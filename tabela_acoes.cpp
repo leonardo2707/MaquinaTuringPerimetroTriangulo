@@ -112,7 +112,13 @@ dado_tabela tabelaAcao1(char simboloAtual, int estadoAtual)
 	dado.prox_estado = -1;
 	dado.direcao = 'D';
 
-	cout << "Simbolo com estado não se encontra na tabela de ação ERROR" << endl;
+	cout << "ERROR" << endl;
+	cout << "ERROR" << endl;
+	cout << "ERROR" << endl;
+	cout << "Simbolo com estado não reconhecido pela maquina" << endl;
+	cout << "ERROR" << endl;
+	cout << "ERROR" << endl;
+	cout << "ERROR" << endl;
 
 	return dado;
 }
