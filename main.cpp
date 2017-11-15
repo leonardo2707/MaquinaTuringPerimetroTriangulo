@@ -13,7 +13,8 @@ void menu_valores_prontos()
     while(op != 0){
 
       cout << "--- Valores de teste---" << endl;
-      cout << "1 - XXX_XXXX_XXXX" << endl;
+      cout << "1 - >XXX_XXXX_XXXX" << endl;
+      cout << "2 - >XXXX_XX_XX" << endl;
       cout << "0 - Voltar" << endl;
 
       cin >> op;
@@ -21,8 +22,12 @@ void menu_valores_prontos()
       switch(op)
       {
       	case 1:
-      	   trabalharMaquina("XXX_XXXX_XXXX");
+      	   trabalharMaquina(">XXX_XXXX_XXXX");
       		break;
+      		
+      	case 2:
+      	  trabalharMaquina(">XXXX_XX_XX");
+      	  break;
 
       	case 0:
       	   cout << "voltando ao menu principal" << endl;
