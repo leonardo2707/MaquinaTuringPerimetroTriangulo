@@ -25,6 +25,11 @@ void menuEscolhaMaquina(string fita)
       	   op = 0;
       		break;
 
+      	case 2:
+      	   trabalharMaquina02(fita);
+      	   op = 0;
+      	   break;
+
       	case 0:
       	   cout << "Voltando para menu da fita" << endl;
       		break;
