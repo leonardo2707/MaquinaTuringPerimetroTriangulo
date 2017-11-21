@@ -142,7 +142,7 @@ dado_tabela tabelaAcao2(char simboloAtual, int estadoAtual){
 	{
 		dado.prox_estado = 1;
 		dado.escrever_simbolo = 'X';
-		dado.direcao = 'D'
+		dado.direcao = 'D';
 	   return dado;
 	}
 
@@ -165,7 +165,7 @@ dado_tabela tabelaAcao2(char simboloAtual, int estadoAtual){
 
 	if(estadoAtual == 2 && simboloAtual == '_')
 	{
-		dado.prox_estado = 2;
+		dado.prox_estado = 3;
 		dado.escrever_simbolo = '_';
 		dado.direcao = 'D';
 		return dado;
@@ -175,7 +175,7 @@ dado_tabela tabelaAcao2(char simboloAtual, int estadoAtual){
 	{
 		dado.prox_estado = 3;
 		dado.escrever_simbolo = 'X';
-		dado.direcao = 'D'
+		dado.direcao = 'D';
 		return dado;
 	}
 
@@ -239,7 +239,7 @@ dado_tabela tabelaAcao2(char simboloAtual, int estadoAtual){
 	{
 		dado.prox_estado = 9;
 		dado.escrever_simbolo = '_';
-		dado.direcao = 'E'
+		dado.direcao = 'E';
 		return dado;
 	}
 

@@ -31,7 +31,7 @@ void trabalharMaquina01(string fita)
 	{
 		
 		simboloAtual = fita[i];
-		
+		cout << "estado atual: " << estadoAtual << endl;
 		dado = tabelaAcao1(simboloAtual, estadoAtual);
 
 		estadoAtual = dado.prox_estado;
@@ -77,7 +77,7 @@ void trabalharMaquina02(string fita)
 	{
 		
 		simboloAtual = fita[i];
-		
+		cout << "estado atual: " << estadoAtual << endl;
 		dado = tabelaAcao2(simboloAtual, estadoAtual);
 
 		estadoAtual = dado.prox_estado;
