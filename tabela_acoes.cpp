@@ -187,19 +187,28 @@ dado_tabela tabelaAcao2(char simboloAtual, int estadoAtual){
 		return dado;
 	}
 
+
 	if(estadoAtual == 4 && simboloAtual == '_')
 	{
 		dado.prox_estado = 5;
 		dado.escrever_simbolo = '_';
-		dado.direcao = 'D';
+		dado.direcao = 'E';
+		return dado;
+	}
+
+	if(estadoAtual == 5 && simboloAtual == 'X')
+	{
+		dado.prox_estado = 5;
+		dado.escrever_simbolo = 'X';
+		dado.direcao = 'E';
 		return dado;
 	}
 
 	if(estadoAtual == 5 && simboloAtual == '_')
 	{
 		dado.prox_estado = 6;
-		dado.escrever_simbolo = '_';
-		dado.direcao = 'E';
+		dado.escrever_simbolo = 'X';
+		dado.direcao = 'D';
 		return dado;
 	}
 
@@ -207,27 +216,19 @@ dado_tabela tabelaAcao2(char simboloAtual, int estadoAtual){
 	{
 		dado.prox_estado = 6;
 		dado.escrever_simbolo = 'X';
-		dado.direcao = 'E';
+		dado.direcao = 'D';
 		return dado;
 	}
 
 	if(estadoAtual == 6 && simboloAtual == '_')
 	{
 		dado.prox_estado = 7;
-		dado.escrever_simbolo = 'X';
-		dado.direcao = 'D';
+		dado.escrever_simbolo = '_';
+		dado.direcao = 'E';
 		return dado;
 	}
 
 	if(estadoAtual == 7 && simboloAtual == 'X')
-	{
-		dado.prox_estado = 7;
-		dado.escrever_simbolo = 'X';
-		dado.direcao = 'D';
-		return dado;
-	}
-
-	if(estadoAtual == 7 && simboloAtual == '_')
 	{
 		dado.prox_estado = 8;
 		dado.escrever_simbolo = '_';
@@ -237,29 +238,21 @@ dado_tabela tabelaAcao2(char simboloAtual, int estadoAtual){
 
 	if(estadoAtual == 8 && simboloAtual == 'X')
 	{
-		dado.prox_estado = 9;
-		dado.escrever_simbolo = '_';
-		dado.direcao = 'E';
-		return dado;
-	}
-
-	if(estadoAtual == 9 && simboloAtual == 'X')
-	{
-		dado.prox_estado = 9;
+		dado.prox_estado = 8;
 		dado.escrever_simbolo = 'X';
 		dado.direcao = 'E';
 		return dado;
 	}
 
-	if(estadoAtual == 9 && simboloAtual == '_')
+	if(estadoAtual == 8 && simboloAtual == '_')
 	{
-		dado.prox_estado = 7;
+		dado.prox_estado = 6;
 		dado.escrever_simbolo = 'X';
 		dado.direcao = 'D';
 		return dado;
 	}
 
-	if(estadoAtual == 9 && simboloAtual == '>')
+	if(estadoAtual == 8 && simboloAtual == '>')
 	{
 		dado.prox_estado = -1;
 		dado.escrever_simbolo = '>';
