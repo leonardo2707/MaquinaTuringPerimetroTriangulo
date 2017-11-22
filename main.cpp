@@ -85,10 +85,14 @@ void menu_fita()
 	cout << "_ - Simbolo Vazio" << endl;
 	cout << "Por exemplo: >XXX_XX_XX" << endl << endl;
 
-	cout << "Digite a fita que sera lida pela maquina de turing" << endl;
+	cout << "Digite a fita que sera lida pela maquina de turing ou 0 (ZERO) para voltar" << endl;
 	cin >> fita;
 
-    menuEscolhaMaquina(caixaAlta(fita));
+	if(fita[0] != '0')
+	{
+		menuEscolhaMaquina(caixaAlta(fita));
+	}
+    
 
 }
 
